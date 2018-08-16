@@ -26,4 +26,5 @@ function destructivelyDeleteFromDriverByKey(driver, key){
   // return newClone3;
   
   delete driver[key];
+  return driver;
 }
