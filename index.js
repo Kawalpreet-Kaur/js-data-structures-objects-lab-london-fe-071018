@@ -19,3 +19,9 @@ function deleteFromDriverByKey(driver, key){
   delete newClone2[key];
   return newClone2;
 } 
+
+function destructivelyDeleteFromDriverByKey(driver, key){
+  onst newClone3=Object.assign({},driver);
+  delete newClone3[key];
+  return newClone3;
+}
